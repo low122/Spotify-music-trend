@@ -1,2 +1,2 @@
 # Spotify-music-trend
-Data analysis on the music trend that what type of song does people like nowadays. 
+Data analysis of music trends shows what type of songs people like nowadays. The data is taken from Kaggle. 
