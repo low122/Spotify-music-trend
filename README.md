@@ -10,8 +10,9 @@
 -
 - `Main Question`: Artist impact: Analyze how artist involvement and attributes relate to a song's success.
 
-  1. How does the performance vary among solo artists, duos, and groups within the top 10, top 50, top 100, and top 500 ranked songs on Spotify?
-
+    1. How does the performance vary among solo artists, duos, and groups within the top 10, top 50, top 100, top 200 and top 500 ranked songs on Spotify?
+- Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
+  
   2. What song characteristics like key and bpm within the top 10, top 50, top 100, or top 500?
   
   3. Does the release date of a song correlate with its streaming success?
