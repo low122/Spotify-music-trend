@@ -3,20 +3,24 @@
 
 - Note! This dataset is taken from Kaggle by `NIDULA ELGIRIYEWITHANA`, top 1000 streamed Spotify songs on 2023.
 
-- This study analyzes the top 1000 streamed songs on Spotify to investigate whether the type of artist—solo (1), duo (2), or group (3) — affects streaming performance and whether any variables listed below will contribute to a song's success. Utilizing data from these top tracks, I categorize each song by streaming counts into ranks - top 10, top 100, and top 500 to determine trends across different artist types. I will answer three questions, which are evaluated from the main question.
+- This study analyzes the top 1000 streamed songs on Spotify to investigate whether the type of artist—solo (1), duo (2), or group—affects (3) streaming performance and whether any variables listed below will contribute to a song's success. Utilizing data from these top tracks, I categorize each song by streaming counts into ranks - top 10, 50, 100, 250, 500, 650, 817 to determine trends across different artist types. I will answer three questions, which are evaluated from the main question.
 
 
 **Question:**
 -
 - `Main Question`: Artist impact: Analyze how artist involvement and attributes relate to a song's success.
 
-  1. How does the performance vary among solo artists, duos, and groups within the top 10, top 50, top 100, top 200 and top 500 ranked songs on Spotify?
+  1. How does the performance vary among solo artists, duos, and groups within the top 10, 50, 100, 250, 500, 650, 817 ranked songs on Spotify?
 
-  2. What song characteristics like key and bpm within the top 10, top 50, top 100, or top 500?
-  
-  3. Does the release date of a song correlate with its streaming success?
+  2. What song characteristics like key and bpm within the top 10, 50, 100, 250, 500, 650, 817?
 
 **Results**
+-
+
+**Question 1**
+- Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
+
+**Key Findings**
 -
 **Question 1**
 - Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
@@ -38,6 +42,41 @@
    - Consider BPM with a mean of larger than 125:
 
       - Two outlier songs in top 10 have a mean of 178 BPM, which is a leading component among all the ranks
+
+- **Keys**
+   - **Overall Distribution (across all ranks):**
+
+      - C# has the largest proportion 14% in total
+
+      - D# has the smallest proportion 3.68%
+
+      - The proportion of A, B, D, F, F#, G, G# are in the between [8.58%,11.15%]
+
+      - A# and E takes 6.74% and 7.23% respectively
+
+   - **Distribution by Ranking:**
+
+      - C# takes majority in Top 10 (30%) and Top 50 (22.50%)
+
+      - F, E, B, D#, F# do not show up in the top 10 songs
+      
+      - A does not show up in the top 50 songs
+
+- **Mode**
+   - **Overall Distribution (across all ranks):**
+
+      - The dataset contains 451 songs in Major mode and 365 in Minor mode. Major mode exceeds Minor by 19.07%.
+
+   - **Distribution by Ranking:**
+
+      - Top 10 to Top 650: 
+         - Major mode predominates in all these rankings.
+
+      - Proportional Decline: 
+         - The proportion of songs in Major mode gradually decreases from the Top 10 through the Top 650. The highest proportion is 70% in the Top 10, decreasing to a minimum of 54.67% in the Top 650.
+
+      - Shift in Top 817: 
+         - In contrast, the Top 817 ranking shows a slight majority for Minor mode, with 51.20% of songs, compared to 48.80% for Major.
 
 **Hypothesis**
 -
