@@ -27,7 +27,7 @@
 
 **Question 2**
  - **BPM**
-   - BPM does not change much among the ranks, but some valuable information remains.
+   - BPM does not change much across the ranks, but some valuable information remains.
 
    - The overall average BPM in each rank is in the range [117, 125].
 
@@ -38,10 +38,6 @@
          - Majority (6 songs) average key value in the top 10 is 96.5
          
          - Minority (4 songs) average key value in the top 10 is 149.5
-
-   - Consider BPM with a mean of larger than 125:
-
-      - Two outlier songs in top 10 have a mean of 178 BPM, which is a leading component among all the ranks
 
 - **Keys**
    - **Overall Distribution (across all ranks):**
@@ -77,6 +73,63 @@
 
       - Shift in Top 817: 
          - In contrast, the Top 817 ranking shows a slight majority for Minor mode, with 51.20% of songs, compared to 48.80% for Major.
+
+- **Danceability**
+    - Overall: Generally ranges between 70% to 80%.
+
+    - Top 10: 
+       - Maximum is 83%, average is 69.10%, similar to Top 650. Standard deviation is 12.83%, indicating moderate variability.
+
+    - Top 50 to Top 817: 
+      - Maximum danceability consistently around 95-96%, suggesting a strong preference for highly danceable tracks.
+
+ - **Valence**
+    - Overall: Typically between 45% and 55%, with a consistent standard deviation of ~23.47 across rankings.
+
+    - Top 10: Highest average valence at 59.40%, closely followed by Top 650 at 55.59%.
+
+    - Other Rankings: Averages generally lie between 46.90% and 49.81%.
+
+- **Energy**
+    - Overall: Ranges from 60% to 65%.
+
+    - Top 10: Lowest maximum energy at 78%, minimum at 45%, and the lowest average of 59.60% with a standard deviation of 10.97.
+
+    - Other Rankings: Maximum values frequently above 90%, with minimums sometimes dropping below ~30%. Averages fall between 63.62% and 65.68%.
+    
+- **Acousticness**
+    - Overall: Generally around 20% to 28%.
+
+    - Top 10: Maximum at 69%, minimum at 1%.
+
+    - Other Rankings: Maximum values can reach above 90%; minimum consistently at 0%.
+
+- **Instrumentalness**
+    - Overall: Ranges broadly from 0% to 2%.
+
+    - Top 10: Both maximum and minimum values are 0%.
+
+    - Top 50 to Top 500: Maximum value rises sharply from 11% to 91%.
+
+    - Top 500 and Top 817: Peaks at 91% and 83%, respectively, indicating significant tracks with high instrumental content.
+
+- **Liveness**
+    - Trends: 
+      - Maximum liveness increases significantly from Top 10 to Top 817, with a dramatic peak of 97% in Top 250.
+
+    - Consistency: 
+      - Minimum liveness remains nearly zero across all ranks, indicating many studio-produced tracks.
+
+    - Average: Stays around 15% to 20%, with moderate variability.
+
+- **Speechiness**
+    - Progression: Noticeable increase in maximum speechiness from Top 10 to Top 817.
+
+    - Consistency: Minimum speechiness remains around 2-3% across all ranks.
+
+    - Stability:
+       - Mean speechiness ranges from about 7% to 12%, with lower standard deviations except for fluctuations in mid-rankings (Top 100 to Top 650).
+
 
 **Hypothesis**
 -
