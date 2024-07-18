@@ -3,7 +3,7 @@
 
 - Note! This dataset is taken from Kaggle by `NIDULA ELGIRIYEWITHANA`, top 1000 streamed Spotify songs on 2023.
 
-- This study analyzes the top 1000 streamed songs on Spotify to investigate whether the type of artist—solo (1), duo (2), or group—affects (3) streaming performance and whether any variables listed below will contribute to a song's success. Utilizing data from these top tracks, I categorize each song by streaming counts into ranks - top 10, 50, 100, 250, 500, 650, 817 to determine trends across different artist types. I will answer three questions, which are evaluated from the main question.
+- This study analyzes the top 1000 streamed songs on Spotify to investigate whether the type of artist—solo (1), duo (2), or group—affects (3) streaming performance and whether any variables listed below will contribute to a song's success. Utilizing data from these top tracks, I categorize each song by streaming counts into ranks - top 10, 50, 100, 250, 500, 650, 817 to determine trends.
 
 
 **Question:**
@@ -12,7 +12,7 @@
 
   1. How does the performance vary among solo artists, duos, and groups within the top 10, 50, 100, 250, 500, 650, 817 ranked songs on Spotify?
 
-  2. What song characteristics like key and bpm within the top 10, 50, 100, 250, 500, 650, 817?
+  2. How is it different between the songs in the top 10 and the top 50, according to this dataset?
 
 **Results**
 -
@@ -20,115 +20,88 @@
 **Question 1**
 - Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
 
-**Key Findings**
+**Question 2**
+ - Top 10 Characteristics:
+     - BPM: Averages 117-125, with a focus around 90-110.
+
+     - Mode: Major mode dominates (70%).
+
+     - Danceability: High, averaging 69.10%, peaking at 83%.
+
+     - Key: C# is the most frequent.
+
+     - Energy: Lower average at 59.60%, ranges 45-78%.
+
+     - Acousticness: Ranges from 1% to 69%.
+
+     - Speechiness: Low, with a maximum of 28%.
+
+ - Top 50 Characteristics:
+    - BPM: Consistently averages 117-125.
+
+    - Mode: Major mode prevalent (66.5%).
+
+    - Danceability: Very high, peaks near 95-96%.
+
+    - Key: Good variety, with C# still common.
+
+    - Energy: Generally higher, more dynamic.
+
+    - Acousticness: Less acoustic than Top 10.
+    
+    - Speechiness: Slightly higher, up to 37%.
+
+
+**Findings**
 -
-**Question 1**
+
 - Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
 
-**Question 2**
- - **BPM**
-   - BPM does not change much across the ranks, but some valuable information remains.
+ - **BPM:**
 
-   - The overall average BPM in each rank is in the range [117, 125].
+    - **Overall Range:** 117 to 125 BPM across all ranks.
 
-   - The best BPM range observed in the Top 10 is in [90, 110] (majority).
+    - **Top 10:** Majority of songs have BPM between 90 and 110, indicating a preference for moderately paced tracks.
 
-      - The standard deviation in the top 10 is the highest (33) among all the ranks
+    - **Variability:** Highest standard deviation in Top 10 (33), indicating more variability in song tempo within top-ranked songs.
 
-         - Majority (6 songs) average key value in the top 10 is 96.5
-         
-         - Minority (4 songs) average key value in the top 10 is 149.5
+- **Key:**
 
-- **Keys**
-   - **Overall Distribution (across all ranks):**
+    - **Predominant Keys:** C# is prevalent in the Top 10 (30%) and Top 50 (22.50%).
 
-      - C# has the largest proportion 14% in total
+    - **Notable Absences:** Keys such as F, E, B, D#, and F# are missing in the Top 10; A is missing in the Top 50.
 
-      - D# has the smallest proportion 3.68%
+- **Mode:**
 
-      - The proportion of A, B, D, F, F#, G, G# are in the between [8.58%,11.15%]
+    - **Majority Mode:** Major mode dominates from Top 10 to Top 650.
 
-      - A# and E takes 6.74% and 7.23% respectively
+    - **Proportional Shift:** Major mode decreases from 70% in Top 10 to 54.67% in Top 650, with Minor mode overtaking in Top 817 (51.20%).
 
-   - **Distribution by Ranking:**
+- **Danceability:**
 
-      - C# takes majority in Top 10 (30%) and Top 50 (22.50%)
+    - **General Trend:** Ranges from 70% to 80%. Top 10 features high consistency with a mean of 69.10%, and peaks in danceability appear consistently high (95-96%) from Top 50 to Top 817.
 
-      - F, E, B, D#, F# do not show up in the top 10 songs
-      
-      - A does not show up in the top 50 songs
+- **Energy:**
 
-- **Mode**
-   - **Overall Distribution (across all ranks):**
+    - **Variation:** Energy levels show less variation in Top 10 with a low of 45% and high of 78%, compared to higher peaks (above 90%) and lower troughs (below 30%) in other rankings.
 
-      - The dataset contains 451 songs in Major mode and 365 in Minor mode. Major mode exceeds Minor by 19.07%.
+- **Acousticness:**
 
-   - **Distribution by Ranking:**
+    - **Top 10:** Shows higher acousticness with a max of 69%.
 
-      - Top 10 to Top 650: 
-         - Major mode predominates in all these rankings.
+    - **Other Rankings:** Maximum values frequently exceed 90%, with consistent minima at 0%.
 
-      - Proportional Decline: 
-         - The proportion of songs in Major mode gradually decreases from the Top 10 through the Top 650. The highest proportion is 70% in the Top 10, decreasing to a minimum of 54.67% in the Top 650.
+- **Instrumentalness:**
 
-      - Shift in Top 817: 
-         - In contrast, the Top 817 ranking shows a slight majority for Minor mode, with 51.20% of songs, compared to 48.80% for Major.
+    - **General Trend:** Remains low across most rankings but spikes in Top 500 and Top 817, suggesting an increase in instrumental tracks.
 
-- **Danceability**
-    - Overall: Generally ranges between 70% to 80%.
+- **Liveness:**
 
-    - Top 10: 
-       - Maximum is 83%, average is 69.10%, similar to Top 650. Standard deviation is 12.83%, indicating moderate variability.
+    - **Dramatic Peak:** Peaks at 97% in Top 250, indicating some highly live-recorded tracks in mid-to-lower rankings.
 
-    - Top 50 to Top 817: 
-      - Maximum danceability consistently around 95-96%, suggesting a strong preference for highly danceable tracks.
+- **Speechiness:**
 
- - **Valence**
-    - Overall: Typically between 45% and 55%, with a consistent standard deviation of ~23.47 across rankings.
-
-    - Top 10: Highest average valence at 59.40%, closely followed by Top 650 at 55.59%.
-
-    - Other Rankings: Averages generally lie between 46.90% and 49.81%.
-
-- **Energy**
-    - Overall: Ranges from 60% to 65%.
-
-    - Top 10: Lowest maximum energy at 78%, minimum at 45%, and the lowest average of 59.60% with a standard deviation of 10.97.
-
-    - Other Rankings: Maximum values frequently above 90%, with minimums sometimes dropping below ~30%. Averages fall between 63.62% and 65.68%.
-    
-- **Acousticness**
-    - Overall: Generally around 20% to 28%.
-
-    - Top 10: Maximum at 69%, minimum at 1%.
-
-    - Other Rankings: Maximum values can reach above 90%; minimum consistently at 0%.
-
-- **Instrumentalness**
-    - Overall: Ranges broadly from 0% to 2%.
-
-    - Top 10: Both maximum and minimum values are 0%.
-
-    - Top 50 to Top 500: Maximum value rises sharply from 11% to 91%.
-
-    - Top 500 and Top 817: Peaks at 91% and 83%, respectively, indicating significant tracks with high instrumental content.
-
-- **Liveness**
-    - Trends: 
-      - Maximum liveness increases significantly from Top 10 to Top 817, with a dramatic peak of 97% in Top 250.
-
-    - Consistency: 
-      - Minimum liveness remains nearly zero across all ranks, indicating many studio-produced tracks.
-
-    - Average: Stays around 15% to 20%, with moderate variability.
-
-- **Speechiness**
-    - Progression: Noticeable increase in maximum speechiness from Top 10 to Top 817.
-
-    - Consistency: Minimum speechiness remains around 2-3% across all ranks.
-
-    - Stability:
-       - Mean speechiness ranges from about 7% to 12%, with lower standard deviations except for fluctuations in mid-rankings (Top 100 to Top 650).
+    - **Increasing Trend:** Rises significantly from Top 10 (max 28%) to Top 817 (max 64%), reflecting more vocal content in lower rankings
 
 
 **Hypothesis**
@@ -173,15 +146,24 @@
 -
  - Collect data 
     - From "top-spotify-songs-2023" (Kaggle)
- - Wrangle data 
-    - Cleaning
-         - Remove variables that are not related to our topic(Spotify).
-         - Remove any rows with empty data
- - Explore 
-    - data using available techniques
- - Visualization
-    - data to uncover insightful discoveries
+ - Data Wrangling
 
+   - Cleaning:
+      - Removed irrelevant variables not directly associated with our analysis of Spotify's data.
+      
+      - Eliminated any rows containing missing or incomplete data to ensure consistency.
+
+   - Data Exploration
+
+      - Use built-in functions in pandas to determine data type and use plot and seaborn to show statistical data of each variables.
+
+   - Ranking Methodology
+
+      - Categorized songs based on their streaming numbers, allowing for a structured analysis of song popularity across different tiers of streaming success.
+
+   - Data Visualization
+
+      - Implemented visual tools (matplotlib, seaborn) to illustrate the data, aiming to highlight key insights and trends effectively.
 
 **References**
 -
