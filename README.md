@@ -155,15 +155,15 @@
 
    - Data Exploration
 
-      - Use built-in functions in pandas to determine data type and use plot and seaborn to show statistical data of each variables.
+      - Use built-in functions in pandas to determine data type and use plot and seaborn to show statistical data of each variable.
 
    - Ranking Methodology
 
       - Categorized songs based on their streaming numbers, allowing for a structured analysis of song popularity across different tiers of streaming success.
 
-   - Data Visualization
+ - Data Visualization
 
-      - Implemented visual tools (matplotlib, seaborn) to illustrate the data, aiming to highlight key insights and trends effectively.
+    - Implemented visual tools (matplotlib, seaborn) to illustrate the data, aiming to effectively highlight key insights and trends.
 
 **References**
 -
