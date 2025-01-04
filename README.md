@@ -1,170 +1,128 @@
-**Introduction*
+**Spotify Music Trend Analysis 2023**
 -
 
-- Note! This dataset is taken from Kaggle by `NIDULA ELGIRIYEWITHANA`, top 1000 streamed Spotify songs on 2023.
+**Project Background**
 
-- This study analyzes the top 1000 streamed songs on Spotify to investigate whether the type of artist—solo (1), duo (2), or group—affects (3) streaming performance and whether any variables listed below will contribute to a song's success. Utilizing data from these top tracks, I categorize each song by streaming counts into ranks - top 10, 50, 100, 250, 500, 650, 817 to determine trends.
+This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023, exploring key features that influence song rankings and performance. The goal is to understand trends in song features, artist types, and their correlation with stream counts, ultimately providing insights into what makes a song "trendy." The analysis leverages data analytics tools and methodologies to categorize and rank songs, uncover feature-based trends, and offer recommendations.
+
+- Insights and recommendations are provided on the following key areas:
+
+1. Song Features (e.g. BPM, Danceability, Valence, Energy)
+
+2. Artist Composition (Solo, Duo, Group)
+
+3. Key and Mode Trends (e.g., D#, Major)
+
+4. Ranking-Based Transformations (Streams to Rank Categories)
+
+- **Data Structure & Initial Checks**
+
+    - The dataset consists of key song features and rankings from Spotify’s top 1000 streamed songs in 2023. Each song was analyzed for streams, features, and ranking, with an emphasis on identifying patterns across ranked categories.
+
+[Entity Relationship Diagram or dataset schema]
+
+- **Executive Summary**
+
+    - **Overview of Findings**
+
+        - Streams: Streams were transformed into rank categories (Top 10, Top 50, etc.) to better capture trends, as raw stream counts lacked significant correlations with individual features.
+
+        - Artist Type: Solo artists contributed approximately 60% of the top-ranked songs, significantly outperforming groups (~12%).
+
+        - Key and Mode: While the D# key had the lowest proportion of songs (~3.67%), it significantly boosted performance when combined with Major mode (48% higher streams).
+
+        - Feature Insights: BPM and danceability emerged as key distinguishing features for higher-ranked songs, while valence and energy maintained consistency across ranks.
+
+    - **Insights Deep Dive**
+
+        - Category 1: Song Features (BPM, Danceability, Valence, Energy)
+
+            - **BPM (Beats Per Minute)**
+
+                - Main Insight 1: The range (25th to 75th percentile) of BPM fluctuates across ranks, with higher ranks exhibiting narrower distributions.
+
+                - Top 10: Median BPM ~116.5.
+
+                - Top 100–Top 817: Median BPM rises to ~125.5.
+
+                - Supporting Observation: BPM is highly informative in distinguishing higher-ranked songs (Top 10) from lower ranks.
+
+            - **Danceability**
+
+                - Main Insight 2: Danceability ranges from 60% to 78% across all ranks, with the Top 10 showing slightly higher averages (~69.1%).
+
+                - Maximum values stabilize (~95%) across most rankings, reflecting strong market preference for high danceability.
+
+            - **Valence**
+
+                - Main Insight 3: Valence displays a broad spread (25.5% to 76.25%), with Top 10 songs favoring higher emotional positivity (median ~56.5%).
+
+                - Middle Ranks (Top 50–Top 250): Slightly lower valence (~48%), indicating more neutral tones.
+
+            - **Energy**
+
+                - Main Insight 4: Energy levels remain high across ranks (48.75% to 79.25%), with Top 10 songs showing slightly lower median energy (~57.5%) compared to middle ranks (~68%).
+
+                - Top 50–Top 100: Exhibit the highest variability, reflecting more energetic tracks.
+
+            - **Acousticness, Liveness, and Speechiness**
+
+                - Main Insight 5: After implement the ranking, the transformation of acousticness, liveness, and speechiness from left-skewed to right-skewed distributions underscores the importance of ranking-based analysis.
+
+                - This transformation shifts the focus to higher-end values (e.g., the 75th percentile), enhancing the predictive power of these features for distinguishing Top 10 songs from lower ranks.
+
+                - Their shared characteristics further emphasize their potential in analyzing and predicting song performance across rankings.
+
+        [Visualizations specific to song features]
 
 
-**Question:**
--
-- `Main Question`: Artist impact: Analyze how artist involvement and attributes relate to a song's success.
 
-  1. How does the performance vary among solo artists, duos, and groups within the top 10, 50, 100, 250, 500, 650, 817 ranked songs on Spotify?
+    - **Category 2: Artist Composition**
 
-  2. How is it different between the songs in the top 10 and the top 50, according to this dataset?
+        - Solo vs. Group Artists
 
-**Results**
--
+        - Main Insight 1: Solo artists contribute ~60% of top-ranked songs, with group artists contributing only ~12%.
 
-**Question 1**
-- Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
+        - Supporting Observation: Solo artists dominate the Top 10 and Top 50 rankings, indicating stronger performance across all features.
 
-**Question 2**
- - Top 10 Characteristics:
-     - BPM: Averages 117-125, with a focus around 90-110.
+    [Visualizations specific to artist composition]
 
-     - Mode: Major mode dominates (70%).
 
-     - Danceability: High, averaging 69.10%, peaking at 83%.
 
-     - Key: C# is the most frequent.
+    - **Category 3: Key and Mode Trends**
 
-     - Energy: Lower average at 59.60%, ranges 45-78%.
+        - Key (D#) and Mode (Major)
 
-     - Acousticness: Ranges from 1% to 69%.
+        - Main Insight 1: D# is the least common key (~3.67%) but significantly improves streams when combined with Major mode.
 
-     - Speechiness: Low, with a maximum of 28%.
+            - Improvement: 48% higher streams compared to D# alone; 27.5% compared to Major mode alone.
 
- - Top 50 Characteristics:
-    - BPM: Consistently averages 117-125.
+        - Main Insight 2: Major mode dominates (~55%) across all rankings, consistently outperforming Minor mode.
 
-    - Mode: Major mode prevalent (66.5%).
+    [Visualizations specific to key and mode trends]
 
-    - Danceability: Very high, peaks near 95-96%.
 
-    - Key: Good variety, with C# still common.
 
-    - Energy: Generally higher, more dynamic.
+    - **Category 4: Ranking-Based Transformations**
 
-    - Acousticness: Less acoustic than Top 10.
+        - Streams to Rank Categories
+
+        - Main Insight 1: Transforming streams into rank categories (Top 10, Top 50, etc.) revealed clearer trends compared to raw streams.
+
+        - Main Insight 2: Features like BPM and danceability are more effective in predicting rank categories compared to raw stream counts.
+
+    [Visualizations specific to ranking transformations]
+
+
+
+- **Recommendations**
+
+    - Based on the insights and findings above, we recommend the following:
+
+    1. Prioritize High Danceability: Ensure songs target danceability values between 60% and 78%, with a preference for ~95% in higher ranks.
+
+    2. Focus on Emotional Positivity: Favor songs with higher valence (~56%) for the Top 10, appealing to broader audiences.
     
-    - Speechiness: Slightly higher, up to 37%.
+    3. Leverage D# Key with Major Mode: Despite its rarity, combining D# with Major mode significantly boosts performance.
 
-
-**Findings**
--
-
-- Based on the analysis, despite duos (2 artists_count) having a significant proportion in the Top 10, but solo (1 artists_count) streams surpassing duo streams by 15%. Moreover, solo artists consistently achieve higher total streams within the ranked. This indicates a stronger performance impact from solo artists within the top-ranked songs on Spotify.
-
- - **BPM:**
-
-    - **Overall Range:** 117 to 125 BPM across all ranks.
-
-    - **Top 10:** Majority of songs have BPM between 90 and 110, indicating a preference for moderately paced tracks.
-
-    - **Variability:** Highest standard deviation in Top 10 (33), indicating more variability in song tempo within top-ranked songs.
-
-- **Key:**
-
-    - **Predominant Keys:** C# is prevalent in the Top 10 (30%) and Top 50 (22.50%).
-
-    - **Notable Absences:** Keys such as F, E, B, D#, and F# are missing in the Top 10; A is missing in the Top 50.
-
-- **Mode:**
-
-    - **Majority Mode:** Major mode dominates from Top 10 to Top 650.
-
-    - **Proportional Shift:** Major mode decreases from 70% in Top 10 to 54.67% in Top 650, with Minor mode overtaking in Top 817 (51.20%).
-
-- **Danceability:**
-
-    - **General Trend:** Ranges from 70% to 80%. Top 10 features high consistency with a mean of 69.10%, and peaks in danceability appear consistently high (95-96%) from Top 50 to Top 817.
-
-- **Energy:**
-
-    - **Variation:** Energy levels show less variation in Top 10 with a low of 45% and high of 78%, compared to higher peaks (above 90%) and lower troughs (below 30%) in other rankings.
-
-- **Acousticness:**
-
-    - **Top 10:** Shows higher acousticness with a max of 69%.
-
-    - **Other Rankings:** Maximum values frequently exceed 90%, with consistent minima at 0%.
-
-- **Instrumentalness:**
-
-    - **General Trend:** Remains low across most rankings but spikes in Top 500 and Top 817, suggesting an increase in instrumental tracks.
-
-- **Liveness:**
-
-    - **Dramatic Peak:** Peaks at 97% in Top 250, indicating some highly live-recorded tracks in mid-to-lower rankings.
-
-- **Speechiness:**
-
-    - **Increasing Trend:** Rises significantly from Top 10 (max 28%) to Top 817 (max 64%), reflecting more vocal content in lower rankings
-
-
-**Hypothesis**
--
-1. Songs with multiple artists perform better on streaming platforms than songs by solo artists.
-
-
-
-**Variables**
--
- - **response variable**
-      - `streams` - Total number of streams on Spotify
- - **Observer**
-   - **Numeric**
-      - `artists_name`
-
-      - `bpm` - Beats per minute, a measure of song tempo
-
-      - `danceability_%` - Percentage indicating how suitable the song is for dancing
-
-      - `valence_%` - Positivity of the song's musical content
-
-      - `energy_%` - Perceived energy level of the song
-
-      - `acousticness_%` - Amount of acoustic sound in the song
-
-      - `liveness_%` - Presence of live performance elements
-
-      - `speechiness_%` - Amount of spoken words in the song
-
-      - `released_date`
-
-   - **Category**
-   
-      - `key` - Key of the song
-
-      - `mode` - Mode of the song (major or minor)
-      
-      - `artists_type` - 1 (artists_count = 1), 2 (artists_count = 2), 3 (artists_count > 3)
-
-**Methodology**
--
- - Collect data 
-    - From "top-spotify-songs-2023" (Kaggle)
- - Data Wrangling
-
-   - Cleaning:
-      - Removed irrelevant variables not directly associated with our analysis of Spotify's data.
-      
-      - Eliminated any rows containing missing or incomplete data to ensure consistency.
-
-   - Data Exploration
-
-      - Use built-in functions in pandas to determine data type and use plot and seaborn to show statistical data of each variable.
-
-   - Ranking Methodology
-
-      - Categorized songs based on their streaming numbers, allowing for a structured analysis of song popularity across different tiers of streaming success.
-
- - Data Visualization
-
-    - Implemented visual tools (matplotlib, seaborn) to illustrate the data, aiming to effectively highlight key insights and trends.
-
-**References**
--
-- `FGJSPACEMAN`, title : `♫ Spotify 1 - What Does It Take to Hit the Charts`
+    4. Target Solo Artists: Promote solo artists, as they dominate higher-ranked songs.
