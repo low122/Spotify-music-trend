@@ -20,7 +20,7 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
     - The dataset consists of key song features and rankings from Spotify’s top 1000 streamed songs in 2023. Each song was analyzed for streams, features, and ranking, with an emphasis on identifying patterns across ranked categories.
     
 
-  ![Final table](Final_table)
+  ![Final table]([Final_table](https://github.com/low122/Spotify-music-trend/blob/f1302a058cf756de06c334ce560e5895b1fd42e8/Final_table.png))
 
 - **Executive Summary**
 
