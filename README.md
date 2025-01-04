@@ -19,7 +19,6 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
     - The dataset consists of key song features and rankings from Spotify’s top 1000 streamed songs in 2023. Each song was analyzed for streams, features, and ranking, with an emphasis on identifying patterns across ranked categories.
 
-[Entity Relationship Diagram or dataset schema]
 
 - **Executive Summary**
 
@@ -73,8 +72,6 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
                 - Their shared characteristics further emphasize their potential in analyzing and predicting song performance across rankings.
 
-        [Visualizations specific to song features]
-
 
 
     - **Category 2: Artist Composition**
@@ -85,7 +82,7 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
         - Supporting Observation: Solo artists dominate the Top 10 and Top 50 rankings, indicating stronger performance across all features.
 
-    [Visualizations specific to artist composition]
+
 
 
 
@@ -99,7 +96,7 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
         - Main Insight 2: Major mode dominates (~55%) across all rankings, consistently outperforming Minor mode.
 
-    [Visualizations specific to key and mode trends]
+
 
 
 
@@ -111,7 +108,7 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
         - Main Insight 2: Features like BPM and danceability are more effective in predicting rank categories compared to raw stream counts.
 
-    [Visualizations specific to ranking transformations]
+
 
 
 
