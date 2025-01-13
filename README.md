@@ -42,9 +42,9 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
                 - Main Insight 1: The range (25th to 75th percentile) of BPM fluctuates across ranks, with higher ranks exhibiting narrower distributions.
 
-                - Top 10: Median BPM ~116.5.
+                - Top 10: Median BPM 101.5.
 
-                - Top 100–Top 817: Median BPM rises to ~125.5.
+                - Top 100–Top 817: Median BPM in between [119.5, 125.5].
 
                 - Supporting Observation: BPM is highly informative in distinguishing higher-ranked songs (Top 10) from lower ranks.
 
