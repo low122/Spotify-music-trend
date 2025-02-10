@@ -24,24 +24,32 @@ This project focuses on analyzing the top 1000 streamed songs on Spotify in 2023
 
 **Technologies Used**
 --
-Python: The primary programming language for data analysis and visualization.
-Pandas: Used for data manipulation and cleaning.
-NumPy: Used for numerical operations and array handling.
-Matplotlib: Used for creating static, interactive, and animated visualizations.
-Seaborn: Built on top of Matplotlib, providing a high-level interface for creating statistically informative and visually appealing plots.
-Jupyter Notebook: An interactive computing environment used for reproducible data analysis.
+- Python: The primary programming language for data analysis and visualization.
+   
+- Pandas: Used for data manipulation and cleaning.
+  
+- NumPy: Used for numerical operations and array handling.
+  
+- Matplotlib: Used for creating static, interactive, and animated visualizations.
 
---
+- Seaborn: Built on top of Matplotlib, providing a high-level interface for creating statistically informative and visually appealing plots.
+  
+- Jupyter Notebook: An interactive computing environment used for reproducible data analysis.
+
 **Statistical Analysis**
-
+--
 The project utilizes several statistical methods:
 
-Descriptive Statistics: Calculation of mean, median, standard deviation, minimum, and maximum values for various song features across different rank categories.
-Correlation Analysis: Examination of correlations between song features and stream counts (using rank categories).
-Data Transformation: Conversion of raw stream counts into categorical rank variables to facilitate trend analysis.
-Data Visualization: Creation of various plots (e.g., scatter plots, heatmaps, bar plots, violin plots) to visualize data distributions, correlations, and trends.
---
+- Descriptive Statistics: Calculation of mean, median, standard deviation, minimum, and maximum values for various song features across different rank categories.
+  
+- Correlation Analysis: Examination of correlations between song features and stream counts (using rank categories).
+  
+- Data Transformation: Conversion of raw stream counts into categorical rank variables to facilitate trend analysis.
+  
+- Data Visualization: Creation of various plots (e.g., scatter plots, heatmaps, bar plots, violin plots) to visualize data distributions, correlations, and trends.
+
 - **Executive Summary**
+--
 
     - **Overview of Findings**
 
